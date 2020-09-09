@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased; 
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#body_box{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#pokedex_box{
+    width: 800px;
+    height: 600px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+}
+
+#pokedex_view_box{
+    background-color: #b32020;
+
+    width:  400px;
+    height: 600px;
+
+    border-radius: 32px 32px 0 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#pokedex_laser_box{
+    width: 100%;
+    height: 75px;
+
+    box-shadow: -3px 3px 2px black;
+
+    border-radius: 32px 32px 0 0;
+    
+    display: flex;
+
+    align-items: center;
+}
+
+#pokedex_laser{
+    width: 50px;
+    height: 50px;
+
+    background-color: rgb(218, 223, 231);
+
+    margin-left: 25px;
+
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px black;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#laser{
+    width: 45px;
+    height: 45px;
+
+    background-color: #2095d8;
+
+    border-radius: 50%;
+    
+}
+
+#led_box{
+    height: 50px;
+    width: 150px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+#blue_led{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background-color: #2095d8;
+
+    box-shadow: 2px 2px 2px black;
+
+}
+
+#yellow_led{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background-color: rgb(209, 209, 79);
+
+    box-shadow: 2px 2px 2px black;
+
+    margin-left: 10px;
+
+}
+
+#green_led{
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background-color: rgb(29, 128, 29);
+
+    box-shadow: 2px 2px 2px black;
+
+    margin-left: 10px;
+
+}
+
+#pokedex_screen_fullbox{
+    width: 100%;
+    height: 525px;
+
+
+
+}
+
+#pokedex_screen_shadow{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0 0 0 32px;
+    box-shadow: -3px 3px 3px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#pokedex_screen_box{
+    background-color: rgb(218, 223, 231);
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 0 0 24px 24px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+    margin-top: 15px;
+
+    box-shadow: 3px 3px 3px black;
+
+}
+
+#pokedex_screen{
+    width: 300px;
+    height: 200px;
+
+    border-radius: 24px;
+
+    background-color: black;
+
+
+}
+
+#pokemon_screen{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+#pokemon_screen img{
+    height: 200px;
+    width: 100%;
+}
+
+#pokemon_name_box{
+    width: 90%;
+    height: 150px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pokemon_name{
+    width: 150px;
+    height: 75px;
+
+    background-color: #41a35a;
+
+    border-radius: 24px;
+
+    box-shadow: 2px 2px 2px black; 
+}
+
+#name_box{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#arrows_fullbox{
+    width: max-content;
+    height: 150px;
+
+    display: flex;
+
+}
+
+#arrows_left{
+    width: 45px;
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#arrow_left{
+    width: 45px;
+    height: 30px;
+    
+    background-color: black;
+
+    border-radius: 24px 0 0 24px;
+    
+}
+
+#arrows_up_bottom{
+    width: 30px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow_up{
+    height: 45px;
+    width: 30px;
+
+    background-color: black;
+
+    border-radius: 24px 24px 0 0;
+}
+
+#arrow_middle{
+    height: 45px;
+    width: 30px;
+
+    background-color: black;
+
+}
+
+#arrow_bottom{
+    height: 45px;
+    width: 30px;
+
+    background-color: black;
+
+    border-radius: 0 0 24px 24px;
+
+
+}
+
+#arrows_right{
+    width: 45px;
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#arrow_right{
+    width: 50px;
+    height: 30px;
+    
+    background-color: black;
+
+    border-radius: 0 24px 24px 0;
+
+}
+
+#pokedex_search_box{
+    background-color: #b32020;
+
+    width: 400px;
+    height: 525px;
+
+    border-radius: 0 0 32px 0;
+
+
+
+}
+
+#pokedex_search_shadow{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0px 0 32px 0;
+
+    box-shadow: 3px -3px 3px 0px black;
+
+}
+
+
+#pokedex_search_shadow form{
+    width: 100%;
+    height: 525px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search_box{
+    background-color: #41a35a;
+
+    border-radius: 24px;
+
+    width: 300px;
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 3px 3px 2px black;
+}
+
+#search_box input{
+    outline: none;
+
+    background-color: transparent;
+
+    border-width: 0;
+
+    width: 200px;
+    height: 50px;
+
+    display: flex;
+
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#search_box input::-webkit-search-cancel-button{
+    display: none;
+}
+
+#fake_buttons{
+    width: 300px;
+    height: 120px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.buttons{
+    width: 50px;
+
+    height: 50px;
+
+
+    box-shadow: 3px 3px 2px black;
+
+    background-color: #2095d8;
+
+}
+
+#button_box{
+    width: 300px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+#button_box button{
+    width: 150px;
+    height: 100%;
+
+    background: black;
+
+    border-radius: 24px;
+
+    box-shadow: 2px 2px 2px black; 
+
+    outline: none;
+
+}
