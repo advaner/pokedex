@@ -36,6 +36,7 @@ body{
     border-radius: 32px 32px 0 32px;
 
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -256,6 +257,7 @@ body{
     background-color: black;
 
     border-radius: 24px 0 0 24px;
+    outline: none;
     
 }
 
@@ -277,13 +279,17 @@ body{
     background-color: black;
 
     border-radius: 24px 24px 0 0;
+
+    outline: none;
 }
 
 #arrow_middle{
-    height: 45px;
+    height: 30px;
     width: 30px;
 
     background-color: black;
+
+    outline: none;
 
 }
 
@@ -295,6 +301,7 @@ body{
 
     border-radius: 0 0 24px 24px;
 
+    outline: none;
 
 }
 
@@ -316,6 +323,7 @@ body{
     background-color: black;
 
     border-radius: 0 24px 24px 0;
+    outline: none;
 
 }
 
@@ -415,6 +423,8 @@ body{
     box-shadow: 3px 3px 2px black;
 
     background-color: #2095d8;
+
+    outline: none;
 
 }
 

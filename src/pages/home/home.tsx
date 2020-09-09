@@ -77,25 +77,24 @@ const Home = () => {
                                     </div>
                                     <div id="arrows_fullbox">
                                         <div id="arrows_left">
-                                            <div id="arrow_left">
-
-                                            </div>
+                                            <button id="arrow_left">
+                                            </button>
                                         </div>
                                         <div id="arrows_up_bottom">
-                                            <div id="arrow_up">
+                                            <button id="arrow_up">
 
-                                            </div>
+                                            </button>
                                             <div id="arrow_middle">
 
                                             </div>
-                                            <div id="arrow_bottom">
+                                            <button id="arrow_bottom">
 
-                                            </div>
+                                            </button>
                                         </div>
                                         <div id="arrows_right">
-                                            <div id="arrow_right">
+                                            <button id="arrow_right">
 
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -109,26 +108,27 @@ const Home = () => {
                                     <input type="search" placeholder="Pokemon" value={searchPokemon} onChange={(event) => setSearchPokemon(event.target.value)} required/>
                                 </div>
                                 <div id="fake_buttons">
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
-                                    <div className="buttons">
-                                    </div>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+                                    <button className="buttons">
+                                    </button>
+
                                 </div>
                                 <div id="button_box">
                                     <button type="submit" ></button>
