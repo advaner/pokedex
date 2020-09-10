@@ -8,8 +8,14 @@ interface Pokemon {
     name: string,
     sprites: {
         front_default: string
-    }
-
+    },
+    types: [
+        {
+            type: {
+                name: string
+            }
+        }
+    ]
 }
 
 const Home = () => {
@@ -26,9 +32,9 @@ const Home = () => {
 
         const pokemon = response.data
 
-        setPokemons([...pokemons, pokemon])
+        setPokemons([pokemon])
 
-        setSearchPokemon(" ")
+        setSearchPokemon("")
 
         } 
 
@@ -82,18 +88,14 @@ const Home = () => {
                                         </div>
                                         <div id="arrows_up_bottom">
                                             <button id="arrow_up">
-
                                             </button>
                                             <div id="arrow_middle">
-
                                             </div>
                                             <button id="arrow_bottom">
-
                                             </button>
                                         </div>
                                         <div id="arrows_right">
                                             <button id="arrow_right">
-
                                             </button>
                                         </div>
                                     </div>
