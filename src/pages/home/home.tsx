@@ -9,20 +9,19 @@ interface Pokemon {
     sprites: {
         front_default: string
     },
-    types: [
-        {
-            type: {
-                name: string
-            }
-        }
-    ]
+    types: Array<Types>
+}
+
+interface Types {
+    type: {
+        name: string
+    }
 }
 
 const Home = () => {
-
     const [searchPokemon, setSearchPokemon] = useState("")
 
-    const [ pokemons, setPokemons ] = useState<Pokemon[]>([])
+    const [pokemon, setPokemon ] = useState<Pokemon>()
 
     async function handleSubmit (event: FormEvent<HTMLFormElement>): Promise<void>{
         
@@ -30,13 +29,12 @@ const Home = () => {
 
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchPokemon.toLowerCase()}`)
 
-        const pokemon = response.data
-
-        setPokemons([pokemon])
+        const _pokemon = response.data
+        
+        setPokemon(_pokemon)
 
         setSearchPokemon("")
-
-        } 
+    } 
 
     return(
         <React.Fragment>
@@ -64,22 +62,22 @@ const Home = () => {
                             <div id="pokedex_screen_shadow">
                                 <div id="pokedex_screen_box">
                                     <div id="pokedex_screen">
-                                        <div>
-                                            {pokemons.map((pokemon) => (
+                                        <div> 
+                                            {
                                                 <div id="pokemon_screen">
-                                                    <img key={searchPokemon} src={pokemon.sprites.front_default} alt={pokemon.sprites.front_default}/>
+                                                    <img key={searchPokemon} src={pokemon?.sprites.front_default} alt={pokemon?.sprites.front_default}/>
                                                 </div>
-                                            ))}
+                                            }
                                         </div>
                                     </div>
                                 </div>
                                 <div id="pokemon_name_box">
                                     <div id="pokemon_name">
-                                        {pokemons.map((pokemon) => (
-                                                <div id="name_box">
-                                                    <h3 key={searchPokemon}>{pokemon.name.toUpperCase()}</h3>
-                                                </div>
-                                            ))}
+                                        {   
+                                            <div id="name_box">
+                                                <h3 key={searchPokemon}>{pokemon?.types[0].type.name.toUpperCase()}</h3>
+                                            </div>
+                                        }
                                     </div>
                                     <div id="arrows_fullbox">
                                         <div id="arrows_left">
